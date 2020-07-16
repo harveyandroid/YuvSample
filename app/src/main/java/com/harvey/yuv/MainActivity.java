@@ -1,0 +1,16 @@
+package com.harvey.yuv;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.harvey.libyuv.R;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+}

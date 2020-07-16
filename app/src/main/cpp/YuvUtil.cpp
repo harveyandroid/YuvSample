@@ -11,7 +11,7 @@
 using namespace libyuv;
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_avatarcn_yuv_YuvUtil_NV21ToI420(JNIEnv *env, jobject instance,
+Java_com_harvey_yuv_YuvUtil_NV21ToI420(JNIEnv *env, jobject instance,
                                          jbyteArray input_, jbyteArray output_,
                                          jint width, jint height) {
     jbyte *srcData = env->GetByteArrayElements(input_, NULL);
@@ -39,7 +39,7 @@ Java_com_avatarcn_yuv_YuvUtil_NV21ToI420(JNIEnv *env, jobject instance,
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_avatarcn_yuv_YuvUtil_RotateI420(JNIEnv *env, jobject type,
+Java_com_harvey_yuv_YuvUtil_RotateI420(JNIEnv *env, jobject type,
                                          jbyteArray input_, jbyteArray output_,
                                          jint width, jint height,
                                          jint rotation) {
@@ -71,7 +71,7 @@ Java_com_avatarcn_yuv_YuvUtil_RotateI420(JNIEnv *env, jobject type,
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_avatarcn_yuv_YuvUtil_ScaleI420(JNIEnv *env, jobject type,
+Java_com_harvey_yuv_YuvUtil_ScaleI420(JNIEnv *env, jobject type,
                                         jbyteArray src_, jint width, jint height,
                                         jbyteArray dst_, jint dst_width, jint dst_height,
                                         jint mode) {
@@ -108,7 +108,7 @@ Java_com_avatarcn_yuv_YuvUtil_ScaleI420(JNIEnv *env, jobject type,
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_avatarcn_yuv_YuvUtil_MirrorI420(JNIEnv *env, jobject type,
+Java_com_harvey_yuv_YuvUtil_MirrorI420(JNIEnv *env, jobject type,
                                          jbyteArray src_, jint width, jint height,
                                          jbyteArray dst_) {
     jbyte *src_data = env->GetByteArrayElements(src_, NULL);
@@ -139,7 +139,7 @@ Java_com_avatarcn_yuv_YuvUtil_MirrorI420(JNIEnv *env, jobject type,
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_avatarcn_yuv_YuvUtil_CropI420(JNIEnv *env, jobject type,
+Java_com_harvey_yuv_YuvUtil_CropI420(JNIEnv *env, jobject type,
                                        jbyteArray src_, jint width, jint height,
                                        jbyteArray dst_, jint dst_width, jint dst_height,
                                        jint left, jint top) {
@@ -180,7 +180,7 @@ Java_com_avatarcn_yuv_YuvUtil_CropI420(JNIEnv *env, jobject type,
 
 extern "C"
 JNIEXPORT jint JNICALL
-Java_com_avatarcn_yuv_YuvUtil_I420ToNV21(JNIEnv *env, jobject type,
+Java_com_harvey_yuv_YuvUtil_I420ToNV21(JNIEnv *env, jobject type,
                                          jbyteArray i420Src,
                                          jbyteArray nv21Src,
                                          jint width, jint height) {
